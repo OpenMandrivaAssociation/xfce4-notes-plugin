@@ -14,8 +14,8 @@ Obsoletes:	xfce-notes-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Notes panel plugin for the Xfce Desktop Environment. It provides a
-simple system for managing sticky notes on your desktop.
+xfce4-notes-plugin is a notes panel plugin for the Xfce Desktop Environment.
+It provides a simple system for managing sticky notes on your desktop.
 
 %prep
 %setup -q
