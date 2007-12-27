@@ -10,6 +10,8 @@ Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	xfce4-dev-tools
+BuildRequires:	intltool
 Obsoletes:	xfce-notes-plugin
 
 %description
@@ -20,6 +22,8 @@ It provides a simple system for managing sticky notes on your desktop.
 %setup -q
 
 %build
+./autogen.sh
+
 %configure2_5x
 %make
 
