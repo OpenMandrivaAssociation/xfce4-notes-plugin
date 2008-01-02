@@ -13,6 +13,7 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	xfce4-dev-tools
 BuildRequires:	intltool
 Obsoletes:	xfce-notes-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 xfce4-notes-plugin is a notes panel plugin for the Xfce Desktop Environment.
