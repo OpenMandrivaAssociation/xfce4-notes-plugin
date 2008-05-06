@@ -1,6 +1,6 @@
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
-Version:	1.6.1
+Version:	1.6.2
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
