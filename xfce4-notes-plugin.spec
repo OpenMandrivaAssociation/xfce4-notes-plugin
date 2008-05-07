@@ -23,8 +23,6 @@ It provides a simple system for managing sticky notes on your desktop.
 %setup -q
 
 %build
-./autogen.sh
-
 %configure2_5x
 %make
 
