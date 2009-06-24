@@ -1,7 +1,7 @@
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
-Version:	1.6.4
-Release:	%mkrel 2
+Version:	1.7.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin
@@ -47,6 +47,7 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc README ChangeLog AUTHORS
+%{_bindir}/xfce4-notes-settings
 %{_bindir}/xfce4-popup-notes
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/*.desktop
