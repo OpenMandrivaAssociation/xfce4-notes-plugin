@@ -15,6 +15,7 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	xfce4-dev-tools
 BuildRequires:	intltool
 BuildRequires:	thunar-devel
+BuildRequires:	unique-devel
 Obsoletes:	xfce-notes-plugin
 Requires:	xfce4-panel >= 4.4.2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
