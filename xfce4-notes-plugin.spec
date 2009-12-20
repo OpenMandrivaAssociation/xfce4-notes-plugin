@@ -2,7 +2,7 @@
 
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
-Version:	1.7.1
+Version:	1.7.2
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
@@ -25,7 +25,7 @@ It provides a simple system for managing sticky notes on your desktop.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %configure2_5x
@@ -49,9 +49,12 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc README ChangeLog AUTHORS
+%{_sysconfdir}/xdg/autostart/xfce4-notes-autostart.desktop
+%{_bindir}/xfce4-notes
 %{_bindir}/xfce4-notes-settings
 %{_bindir}/xfce4-popup-notes
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/*.desktop
+%{_datadir}/applications/xfce4-notes.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
