@@ -2,7 +2,7 @@
 
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
-Version:	1.7.2
+Version:	1.7.3
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
@@ -14,7 +14,6 @@ BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	xfce4-dev-tools
 BuildRequires:	intltool
-BuildRequires:	thunar-devel
 BuildRequires:	unique-devel
 Obsoletes:	xfce-notes-plugin
 Requires:	xfce4-panel >= 4.4.2
@@ -59,3 +58,5 @@ rm -rf %{buildroot}
 %{_datadir}/applications/xfce4-notes.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
+%{_datadir}/%{name}/gtk-2.0
+%{_datadir}/%{name}/pixmaps
