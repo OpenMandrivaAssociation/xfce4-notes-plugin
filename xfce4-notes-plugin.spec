@@ -3,7 +3,7 @@
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
 Version:	1.7.7
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin
