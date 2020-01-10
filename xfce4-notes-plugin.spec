@@ -26,7 +26,7 @@ It provides a simple system for managing sticky notes on your desktop.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
