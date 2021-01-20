@@ -9,7 +9,6 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-notes-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
-#Patch0:		xfce4-notes-plugin-1.8.1-str-fmt.patch
 
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
@@ -46,15 +45,15 @@ It provides a simple system for managing sticky notes on your desktop.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc README ChangeLog AUTHORS
+%doc README* ChangeLog AUTHORS
 %{_sysconfdir}/xdg/autostart/xfce4-notes-autostart.desktop
 %{_bindir}/xfce4-notes
 %{_bindir}/xfce4-notes-settings
 %{_bindir}/xfce4-popup-notes
 %{_libdir}/xfce4/panel/plugins/libnotes.so
-%{_datadir}/xfce4/panel-plugins/*.desktop
+#{_datadir}/xfce4/panel-plugins/*.desktop
 %{_datadir}/applications/xfce4-notes.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
-%{_datadir}/%{name}/gtk-2.0
+#{_datadir}/%{name}/gtk-2.0
 %{_datadir}/%{name}/pixmaps
