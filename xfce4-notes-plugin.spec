@@ -54,7 +54,7 @@ It provides a simple system for managing sticky notes on your desktop.
 %{_datadir}/applications/xfce4-notes.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
-%{_datadir}/%{name}/pixmaps
-%{_datadir}/xfce4-notes-plugin/gtk-3.0/gtk-main.css
+#{_datadir}/%{name}/pixmaps
+#{_datadir}/xfce4-notes-plugin/gtk-3.0/gtk-main.css
 %{_datadir}/xfce4/panel/plugins/xfce4-notes-plugin.desktop
 
