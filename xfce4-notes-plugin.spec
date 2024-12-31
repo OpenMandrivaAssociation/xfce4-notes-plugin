@@ -23,6 +23,7 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(vapigen)
+BuildRequires:  pkgconfig(gtksourceview-4)
 
 Obsoletes:	xfce-notes-plugin
 Requires:	xfce4-panel
@@ -32,8 +33,7 @@ xfce4-notes-plugin is a notes panel plugin for the Xfce Desktop Environment.
 It provides a simple system for managing sticky notes on your desktop.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure
