@@ -3,22 +3,18 @@
 
 Summary:	Notes plugin for the Xfce panel
 Name:		xfce4-notes-plugin
-Version:	1.11.2
+Version:	1.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-notes-plugin
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-notes-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+BuildRequires:	meson
 BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
-BuildRequires:	perl(XML::Parser)
 BuildRequires:	xfce4-dev-tools
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(unique-1.0)
@@ -41,16 +37,16 @@ It provides a simple system for managing sticky notes on your desktop.
 %autosetup -p1
 
 %build
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc README* ChangeLog AUTHORS
+%doc README* AUTHORS
 %{_sysconfdir}/xdg/autostart/xfce4-notes-autostart.desktop
 %{_bindir}/xfce4-notes
 %{_bindir}/xfce4-notes-settings
